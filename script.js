@@ -22,15 +22,6 @@ require([
         zoom: 4
       });
 
-      /*************************************************************
-       * The PopupTemplate content is the text that appears inside the
-       * popup. {fieldName} can be used to reference the value of an
-       * attribute of the selected feature. HTML elements can be used
-       * to provide structure and styles within the content. The
-       * fieldInfos property is an array of objects (each object representing
-       * a field) that is use to format number fields and customize field
-       * aliases in the popup and legend.
-       **************************************************************/
 
       var template = { // autocasts as new PopupTemplate()
         title: "Kelp Info",
@@ -79,8 +70,7 @@ require([
       type: "simple",  // autocasts as new SimpleRenderer()
       symbol: symbol
     };
-      // Reference the popupTemplate instance in the
-      // popupTemplate property of FeatureLayer
+
   
       var featureLayer1 = new FeatureLayer({
         url: "https://cumulus.tnc.org/arcgis/rest/services/Atlas/MarineMaps/MapServer/6",
